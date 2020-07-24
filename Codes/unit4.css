@@ -1,0 +1,47 @@
+body{
+	background-color:white;
+}
+#h1{
+	font-size: 20px;
+	font-weight: 50%;
+	font-family: sans-serif;
+}
+#unit4exp{
+
+}
+#select{
+    padding: 6px 10px;
+    width: 180px;
+    height: 30px;
+    font-size: 14px;
+}
+#c1{
+    font-size: 18px;
+    margin-left: 70px;
+    margin-right: 70px;
+    color: black;
+    line-height: 1.5;
+    font-family: sans-serif;
+    }
+#c2,#c4,#c5,#c6{
+    font-size: 18px;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: black;
+    line-height: 1.5;
+    font-family: sans-serif;
+}
+table{
+    border-collapse: collapse;
+}
+
+input[type="text"]
+{
+    width: 80px;
+    height: 25px;
+}
+td,tr{
+    border: 2px solid black;
+    padding: 8px;
+    color: black;
+}

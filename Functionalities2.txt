@@ -1,0 +1,13 @@
+Functionalities observed for this experiment are as follows:
+*On clicking the experiment button:
+*A dropdown is observed where we are able to select the corpus(corpus1/corpus2/corpus3)
+*On selecting anyone of the corpus from the dropdown:
+*A paragraph appears along with 2 input fields:
+*Text for the input field appears,  "Enter the number of tokens and types for the above corpus"
+*On entering the input fields, we can now click on submit button:
+*If anyone of the field is declared to be false, then the field color changes "Red" and message appears wrong answer
+*On submitting both the fields correct, the field color changes "Green" and message appears "Right Answer"
+*On clicking continue button, message for correct answer will be hidden. Considering all the tokens with similar root word to be same type"Recalculate the number of types is displayed"
+*New types is displayed and input field is displayed, Submit button will be displayed
+*If given input is correct "Concept based on Snowball Stemmer", Green color with "Correct answer" gets displayed. Experiment completes
+*If given input is not correct, Red color with "Wrong answer" gets displayed.

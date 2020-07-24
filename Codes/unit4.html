@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Virtual Labs</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="unit4.css">
+</head>
+
+<body>
+    <h1>Experiment: </h1>
+    <center>
+    <div class="unit4exp">
+            <select class="select" onchange="corpusfunc()">
+    <option value="sel" selected>---Select a corpus---</option>
+    <option value="corpus1"  id="cor1">Corpus 1</option>
+    <option value="corpus2"  id="cor2">Corpus 2</option>
+    <option value="corpus3"  id="cor3">Corpus 3</option>
+    </select></div><br><br>
+    <p id="c1"></p><br>
+    <p id="c2" style="visibility: hidden;">Enter the number of tokens and types for the above corpus:</p>
+    <form name="demo">
+    <table id="ctable" style="visibility: hidden;">
+    <tr>
+        <td>#tokens:</td>
+        <td><input type="text" name="ip1" id="ip1"></td>
+    </tr>
+    <tr>
+        <td>#types:</td>
+        <td><input type="text" name="ip2" id="ip2"></td>
+    </tr>
+    </table>
+    </form><br>
+    <button id="cbutton" style="visibility: hidden;" onclick="demo1=cortok(); demo2=cortyp();
+    if(parseInt(demo.ip1.value) == demo1)
+    {
+        document.getElementById('ip1').style.backgroundColor='green'
+    }
+    else
+    {
+        document.getElementById('ip1').style.backgroundColor='red'
+    }
+    if(parseInt(demo.ip2.value) == demo2)
+    {
+        document.getElementById('ip2').style.backgroundColor='green'
+    }
+    else
+    {
+        document.getElementById('ip2').style.backgroundColor='red'
+    }
+    if((document.getElementById('ip1').style.backgroundColor == 'green') && (document.getElementById('ip2').style.backgroundColor == 'green'))
+    {
+        document.getElementById('c3').innerHTML= '<span style=\'color:green; font-size:20px\'>Right Answer</span>'
+        document.getElementById('cbutton1').style.visibility='visible'
+    }
+    else
+    {
+        document.getElementById('c3').innerHTML= '<span style=\'color:red;font-size:20px\'>Wrong Answer</span>'
+        document.getElementById('cbutton1').style.visibility='hidden'
+    } ">Submit</button><br><br>
+    <p id="c4"></p>
+    <p id="c5"></p><input type="text" name="ip3" id="ip3" style="visibility: hidden;">
+    <p id="c3"></p>    
+    <button id="cbutton1" style="visibility:hidden" onclick="func1(); p=func2();x++;if(x>=2){func3(p)}">Continue</button><br><br>
+    <p id="c6"></p>
+  </center>
+    <script src="..\Libraries\require.js"></script>
+    <script src="..\Libraries\node_modules\snowball\stemmer\lib\Snowball.min.js"></script>
+<script src="unit4.js" type="text/javascript"></script>
+</body>
+</html>
